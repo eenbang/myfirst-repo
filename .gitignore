@@ -1,0 +1,4 @@
+*.cph
+subfolder/*.cph
+*.exe
+output
