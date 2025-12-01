@@ -55,6 +55,14 @@
         "queue": "cpp",
         "vector": "cpp",
         "xtree": "cpp",
-        "noob119": "cpp"
+        "noob119": "cpp",
+        "unordered_map": "cpp",
+        "map": "cpp",
+        "deque": "cpp",
+        "iomanip": "cpp",
+        "list": "cpp",
+        "set": "cpp",
+        "xhash": "cpp",
+        "sstream": "cpp"
     }
 }
