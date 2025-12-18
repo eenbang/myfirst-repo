@@ -63,6 +63,7 @@
         "list": "cpp",
         "set": "cpp",
         "xhash": "cpp",
-        "sstream": "cpp"
+        "sstream": "cpp",
+        "unordered_set": "cpp"
     }
 }
