@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>霓虹人方块</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 开始界面 -->
+    <div id="startMenu" class="start-menu">
+        <div class="start-menu-content">
+            <h1 class="start-title">🌸 霓虹方块 🌸</h1>
+            <div class="difficulty-selection">
+                <h2>选择难度</h2>
+                <div class="difficulty-buttons">
+                    <button id="easyBtn" class="difficulty-btn easy-btn">😊 消极</button>
+                    <button id="mediumBtn" class="difficulty-btn medium-btn">😎 中等</button>
+                    <button id="hardBtn" class="difficulty-btn hard-btn">🔥 疯狂</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="game-container">
+        <div class="game-header">
+            <h1>🌸 霓虹方块 🌸</h1>
+        </div>
+        <div class="game-content">
+            <div class="info-panel">
+                <div class="score-board">
+                    <h3>分数</h3>
+                    <div id="score">0</div>
+                </div>
+                <div class="level-board">
+                    <h3>等级</h3>
+                    <div id="level">1</div>
+                </div>
+                <div class="lines-board">
+                    <h3>消除行数</h3>
+                    <div id="lines">0</div>
+                </div>
+                <div class="next-piece">
+                    <h3>下一个</h3>
+                    <canvas id="nextCanvas" width="120" height="120"></canvas>
+                </div>
+            </div>
+            <div class="game-board-container">
+                <canvas id="gameCanvas" width="450" height="600"></canvas>
+                <div id="gameOver" class="game-over hidden">
+                    <h2>👋😭👋 游戏结束 👋😭👋</h2>
+                    <p>✨ 最终分数: <span id="finalScore">0</span> ✨</p>
+                    <button id="restartBtn">🌸 从澪开始 🌸</button>
+                </div>
+                <div id="gamePaused" class="game-paused hidden">
+                    <h2>⏸️ 游戏暂停 ⏸️</h2>
+                    <p>按 P 继续游戏</p>
+                </div>
+            </div>
+            <div class="controls-panel">
+                <h3>操作说明</h3>
+                <div class="controls-list">
+                    <div><strong>A</strong> 左移</div>
+                    <div><strong>D</strong> 右移</div>
+                    <div><strong>S</strong> 加速下落</div>
+                    <div><strong>W</strong> 旋转</div>
+                    <div><strong>Space</strong> 硬降</div>
+                    <div><strong>P</strong> 暂停/继续</div>
+                    <div><strong>Q</strong> 回到开始界面</div>
+                    <div><strong>M</strong> 音乐开/关</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

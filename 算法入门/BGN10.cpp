@@ -19,9 +19,7 @@ int main(){
         if(sum == 0){
             flag = true;
         }
-        else{
-            for(int i = 0; i <= count3; i++){
-                for(int j = 0; j <= count2; j++){
+         for(int j = 0; j <= count2; j++){
                     temp = sum;
                     temp = temp + i*6 + j*2;   
                     if (temp % 9 == 0) flag = true;                 
